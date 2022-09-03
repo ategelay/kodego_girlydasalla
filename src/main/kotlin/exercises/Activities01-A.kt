@@ -13,6 +13,7 @@ fun main(){
 
     println("Enter student grade")
     var grade1 : Int = readln().toInt()
+    println("Entered grade is $grade1")
 
     //student 2
     println("Enter students name2:")
@@ -23,6 +24,7 @@ fun main(){
 
     println("Enter student grade")
     var grade2 : Int = readln().toInt()
+    println("Entered grade is $grade2")
 
     //student 3
     println("Enter students name3:")
@@ -33,6 +35,7 @@ fun main(){
 
     println("Enter student grade")
     var grade3 : Int = readln().toInt()
+    println("Entered grade is $grade3")
 
 
 }
