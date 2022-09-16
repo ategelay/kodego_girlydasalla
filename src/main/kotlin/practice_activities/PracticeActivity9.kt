@@ -1,16 +1,17 @@
 package practice_activities
 
 fun main(){
+//
+//    var samsung = Phone("galaxy", "white", 128, 5,168)
+//
+//    var model = "fold"
+//    samsung.model = model
+//    println(samsung.model)
 
-    var samsung = Phone("galaxy", "white", 128, 5,168)
-    samsung.model = "Galaxy"
-    samsung.color = "White"
-    samsung.memory = 128
-    samsung.cameraPixel = 5
-    samsung.weightGrams =168
+    var nokia = Phone("3310")
+    var mobilePrice = Phone ("10999")
 
 }
-
 
 class Phone(var model:String, var color:String, var memory:Int, var cameraPixel:Int, var weightGrams:Int) { //constructor -> primary constructor
     init{
@@ -22,6 +23,8 @@ class Phone(var model:String, var color:String, var memory:Int, var cameraPixel:
         println("weight in grams is $weightGrams")
     }
     //secondary constructor
+    constructor(model:String):this(model,"white", 128,5, 168){}
+
 
     fun color(){
         println("Phone color is $color")
