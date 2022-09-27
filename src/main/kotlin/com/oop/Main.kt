@@ -1,7 +1,10 @@
 package com.oop
 
-fun main() {
-    var joePerson = Student("Joe", 23)
-    joePerson.displayName()
-    joePerson.displayAge()
+fun main(){
+    var manager = Manager()
+    manager.computeBonus()
+    //3000.00 + 10%
+    var staff = Staff()
+    staff.computeBonus()
+    //1000.00
 }
