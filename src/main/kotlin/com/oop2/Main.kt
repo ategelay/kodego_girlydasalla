@@ -1,5 +1,4 @@
 package com.oop2
-
 fun main(){
     var dog = Dog()
     var chicken = Chicken()
