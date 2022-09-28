@@ -1,29 +1,32 @@
 package com.oop
 //Abstraction // encapsulation
-open class Person {
-    var name : String = "John"
-        get() {return field}
-        set(value) {
-            field = value
-        }
-    var age : Int = 23
-        get() {return field}
-        set(value) {
-            if(value < 1 ) {
-                println("Invalid Age!")
-            }else {
-                field = value
-            }
-        }
+//inheritance -> "is-a relationship
+open class Person(name:String, age: Int) {
+    var name : String = name
+    var age : Int = age
+
     init{
         println("Object Created!")
         println("name is $name, age is $age")
     }
-    fun upAge():Int{
-        age++
-        return age
+
+    //polymorphism
+    // 1) overriding - same name, same paramenters,
+    // different implementation, one is the superclass,
+    // one is in the subclass
+    open fun displayName(){
+        println("Name is $name")
     }
-    fun change(age:Int){
-        println(age)
+
+    // 2) overloading - same name, different parameters, same class
+    fun displayName(name: String){
+        println("Name is $name")
+    }
+    fun displayName(numberOfTimes: Int){
+        var ctr =numberOfTimes -1
+        while(ctr >=0){
+            println("Name is $name")
+            ctr--
+        }
     }
 }
